@@ -1,0 +1,221 @@
+<html data-scribe-reduced-action-queue="true" lang="en" ng-app="profile">
+<!--<![endif]-->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Welcome</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+   	<link rel='stylesheet' href='stylesheets/style.css' />
+   	<link rel='stylesheet' href='stylesheets/font.css' />
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+   	<script src="angularjs/profileAngular.js"></script>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+   <script>
+
+
+                      profile.value("profileId", '<%= profileId %>');
+                      profile.value("isExistingFollower",'<%= isExistingFollower %>');
+                      profile.value("follower_count",'<%= follower_count%>');
+                    </script>
+</head>
+<body  ng-controller="profile" ng-cloak>
+	<div class="homeTop">
+		<div class="homeTopContainer">
+			<div class="homeNavigation">
+				<div class="container">
+          <div class="homeTopbar">
+            <div class="leftPanel">
+              <ul>
+                <li class="upperTab" style="border-bottom-color: #0084B4;    border-bottom: 5px solid #1b95e0;
+    transition: all .15s ease-in-out; height:42px;">
+    <ul style="padding: 0px;"><li><a href="/homepage" style="color: #66757f;">
+                  <span class="Icon Icon--home Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+                    <span class="text">Home</span> </a> </li></ul>
+              </li>
+               <li class="upperTab">
+                <ul style="padding: 0px;"><li><a href="#" style="color: #66757f;">
+            <span class="Icon Icon--lightning Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+            <span class="text">Moments</span></a></li></ul>
+          </li>
+              <li class="upperTab" >
+                <ul style="padding: 0px;"><li><a href="#" style="color: #66757f;">
+                <span class="Icon Icon--notifications Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+                <span class="text">Notifications</span></a></li></ul>
+
+              
+          </li>
+
+          <li class="upperTab" >
+            <ul style="padding: 0px;"><li><a href="#" style="color: #66757f;">
+                <span class="Icon Icon--dm Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+                <span class="text">Messages</span>
+              </a>
+              </li></ul>
+          </li>
+
+        </ul>
+      </div>
+      <div class="homeLogo" style="position:absolute;margin-left:70%;">
+      <h1 class="Icon Icon--bird bird-topbar-etched" style="display: inline-block; width: 24px; height: 21px;color: #1da1f2;
+    font-size: 21px;
+    margin-top: 14px;
+    margin-left: -24px;transition: all .25s ease-in-out;">
+      <span class="visuallyhidden">Twitter</span>
+      </h1>
+      </div>
+      <div class="rightPanel">
+        <ul>
+          <li>
+           <a href="/search">
+           <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 7px; margin-right:7px;">Search</button> 
+         </a>
+          </li>
+          <li>
+            <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 7px;" ng-click="submit();">Log out</button>
+
+          </li></ul>
+        </div>
+      </div>
+      <div style="height:1000px;margin-top:50px;" layout="row" layout-wrap>
+        <div flex="33" class="leftProfile">
+          <div class="dashboardProfile">
+           <div class="profileDisplayLeft">
+            
+               <img style="    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+    position: relative; height:228px;width:228px;" src="../images/<%=profileId%>.jpeg" class="img-rounded">
+
+               <!-- <img style=" max-width:100%;max-height:100%;border-radius: 8px;" src="https://pbs.twimg.com/profile_images/569555322730070016/-G05xDV8_400x400.jpeg" alt="Chirag Patel">-->
+                    <a href="/<%=profileId%>">
+                     
+                    <h3 ng-model="first_name" style="margin-left:13px;color:black;"><%=first_name %> <%=last_name%></h3></a>
+                    
+                    
+                    <a href="/<%=profileId%>"><h4 style="padding-left:10px;margin-top:2px;">@<%=profileId%></h4></a>
+                                        
+                    <div class="profileStats">
+                      <ul>
+                    <li class="sizeFit">
+        <a class="ProfileCardStats-statLink u-textUserColor u-linkClean u-block js-nav" title="3 Tweets" href="/c__patel" data-element-term="tweet_stats">
+          <span class="statLabel">Tweets</span>
+          <span class="statValue"><%=tweets.length%></span>
+        </a>
+      </li>
+                      <li class="sizeFit">
+          <a class="ProfileCardStats-statLink u-textUserColor u-linkClean u-block js-nav" title="135 Following" href="/c__patel/following" data-element-term="following_stats">
+            <span class="statLabel">Following</span>
+            <span class="statValue"><%=following_count%></span>
+          </a>
+        </li>
+                      <li class="sizeFit">
+          <a class="ProfileCardStats-statLink u-textUserColor u-linkClean u-block js-nav" title="36 Followers" href="/c__patel/followers" data-element-term="follower_stats">
+            <span class="statLabel">Followers</span>
+            <span class="statValue"><%=follower_count%></span>
+          </a>
+        </li>
+                  </ul>
+                    </div>
+                    <div ng-hide="'<%= profileId%>' == '<%=username%>'">
+                    <div ng-show="followShow">
+                    <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 7px; margin:13px; width:200px;" ng-click="follow();">
+                      <span class="NewTweetButton-icon Icon Icon--follow Icon--large"></span>
+                      <span class="NewTweetButton-text" aria-hidden="true">Follow <%= first_name%></span>
+                    </button>
+                  </div>
+                  <div ng-hide="followShow">
+                    <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 7px; margin:13px; width:200px;" ng-click="unfollow();">
+                      <span class="NewTweetButton-icon Icon Icon--unfollow Icon--large"></span>
+                      <span class="NewTweetButton-text" aria-hidden="true">Unfollow <%= first_name%></span>
+                    </button>
+                  </div>
+                </div>
+              </br>
+              <div class="col-md-12">
+          <div class="row" style="margin-left:10px; margin-top:5px;" ng-hide="'<%= location%>'==''">
+          <span class="Icon Icon--geo Icon--medium" style="float:left"></span>
+          <span >
+              &nbsp; <%= location%>
+          </span>
+        </div>
+
+        <div class="row" style="margin-left:10px;margin-top:5px;" ng-hide="'<%= dob%>'==''">
+          <span class="Icon Icon--balloon Icon--medium" style="float:left"></span>
+          <span >
+              &nbsp; <%= dob%>
+          </span>
+        </div>
+
+          <div class="row" style="margin-left:10px;margin-top:5px;" ng-hide="'<%= phoneNumber%>'==''">
+          <span class="Icon Icon--handset Icon--medium" style="float:left"></span>
+          <span >
+              &nbsp; <%= phoneNumber%>
+          </span>
+        </div>
+          </div> 
+        </div>
+        </div>
+        </div>
+
+        <md-divider></md-divider>
+        <div flex="66">
+           
+          <md-content>
+          <md-list flex="100">
+          <% for(var i=0;i<tweets.length;i++)
+          {
+           %>
+           <!-- <md-subheader class="md-no-sticky">3 line item, long paragraph (see on mobile)</md-subheader> -->
+           <md-list-item class="md-3-line md-long-text">
+             <img ng-src="../images/<%=profileId%>.jpeg" class="md-avatar" alt="">
+                <div class="md-list-item-text">
+                    <h3> <%= first_name%> <%=last_name%></h3><h4><a href="/<%= profileId%>">@<%= profileId%></a></h4>
+                    <p style="overflow-wrap: break-word;" ng-bind-html="trustHtml('<%=tweets[i].TWEET%>')">
+                      
+                    </p>
+                    <div class="tweetIcon">
+                    <ul>
+                      <li>
+                    <md-button class="md-icon-button launch" ng-click="retweet(<%=tweets[i].TWEET_ID%>);">
+                    <md-icon md-svg-src="../images/ic_repeat_black_18px.svg" style="margin-top:5px; height:15px;width:15px; float-right;" aria-label="android "></md-icon>
+                  </md-button>
+                </li>
+                </ul>
+              </div>
+
+                </div>
+            </md-list-item>
+            <md-divider></md-divider>
+       <%
+        }
+        %>
+   </md-list>
+ </md-content>
+
+</div>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+</div>
+</div>
+</body>
+</html>

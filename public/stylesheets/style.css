@@ -1,0 +1,566 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.bs-example
+{
+	margin: 0 auto;
+	margin-left:5%;
+	width: 20%;
+	float : left;
+}
+
+div.product_content
+{
+	margin-left:5%;
+	width:63%;
+}
+
+div.product_content h3 
+{
+	margin :0;
+	margin-bottom:4%;
+}
+
+div.rows-container div.span3
+{
+	margin-right:5%;
+	border: 1px black solid;
+	padding: 2%;
+	margin-bottom: 5%;
+}
+div.rows-container div.span3 p
+{
+	width:68%;
+}
+
+input.quantity
+{
+	width: 10%;
+}
+
+form.afterSignIn
+{
+	width:420px;
+	margin:0 auto;
+	margin-top: 8%;
+}
+
+form.profile
+{
+	width:420px;
+	margin:0 auto;
+	margin-top: 8%;
+	border:0px;
+}
+form.profile.input
+{
+	width:270px;
+}
+
+div.col-sm-10
+{
+	margin-bottom:10px;
+}
+
+.usernameDiv
+{
+	margin-left: 10%;
+	width:100%;
+}
+
+div.usernameDiv div.col-sm-10
+{
+	padding-left:0px;
+}
+
+.signIn
+{
+	margin-left : 10%;
+}
+
+.signuplink
+{
+	margin-left : 35%;
+}
+
+#if-part
+{
+	color : red;
+	margin-left: 26%;
+}
+
+#if-part1
+{
+	color : red;
+	margin-left: 45%;
+	margin-top : 4%;
+}
+
+.signupPage
+{
+	width: 51%;
+	margin: 0 auto;
+	margin-top : 4%;
+}
+
+.addCatalog
+{
+	float: left;
+	border: 1px solid black;
+	margin-left: 10%;	
+}
+
+.labelProduct
+{
+	margin-left: 16px;
+	margin-top: 10px;
+}
+.category_list
+{
+	clear : left;
+}
+
+.category_list1
+{
+	clear: right;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.common_css
+{
+	clear : both;
+	float: left;	
+}
+
+.checkoutBody
+{
+	margin: 0 auto;
+width: 900px;
+margin-top: 8%;
+}
+
+.lastLogin
+{
+	font-weight: 100;
+font-size: 14px;
+}
+
+
+
+div.topbar {    
+	background-image:url(../images/lohp_streams_header_bg_v4.png);
+	background-size:100% 100%;
+	height: 46px;
+}
+
+div.container
+{
+	max-width: 1190px;
+}
+
+ul.signUpTwitterLogo
+{
+	position: absolute;
+    left: 50%;
+}
+
+div.IconLarge {
+	color:white;
+	width:24px;
+	height:21px;
+	content: "\f179";
+}
+
+div.pageCanvas
+{
+	width: 500px;
+    border: 0;
+    margin:0 auto;
+}
+
+div.signup-wrapper
+{
+width:392px;
+padding:30px 0;
+margin:0 auto;
+}
+div.signup-wrapper h1 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+div.signUpInput input
+{
+	width: 372px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+div.signUpButton button
+{
+	width: 372px;
+	color: white;
+    background-color: #1da1f2;
+    background-repeat: no-repeat;
+    background-image: none;
+    box-shadow: none;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 12px 16px;
+    border-radius: 3px;
+    transition: background .2s linear;
+    border: 0;
+}
+
+div.subText
+{
+font-weight: 300;
+font-size: 18px;
+line-height: 25px;
+color: #8899a6;
+margin-bottom: 24px;
+padding: 0;
+}
+
+div.loginTop
+{
+	height: 40px;
+    box-shadow: 0 0 3px #aaa;
+    border-bottom: 1px solid #e1e8ed;
+    color: #66757f;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 0 12px;
+}
+
+div.loginTopContainer
+{
+	max-width: 800px;
+	margin:0 auto;
+	position: relative;
+    top: 1px;
+}
+
+div.headerLogo img
+{
+	height: 18px;
+	vertical-align: text-bottom;
+	margin-top: 10px;
+}
+
+div.loginPageContainer
+{
+    background: white;
+    margin: 10px auto 20px;    
+    width: auto;
+    max-width: 835px;
+}
+
+div.loginSection
+{
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    box-shadow: 0 0 225px rgba(255,255,255,.55);
+    border-radius: 6px;
+    border: 1px solid #e1e8ed;
+    //border: 1px solid rgba(0,0,0,0.1);
+    padding: 0;
+    width: auto;
+    margin-top: 20px;
+}
+
+div.loginWrapper
+{
+    margin: 0 auto 10px;
+    width: auto;
+    max-width: 585px;
+    padding: 0 10px
+}
+div.loginSection h1
+{
+	padding: 40px 0 20px 0;
+    clear: both;
+    font-size: 24px;
+    line-height: .8;
+        font-weight: bold;
+        margin: 0 auto;
+}
+
+div.loginSection input
+{
+	width: 97%;
+    max-width: 280px;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px;
+    transition: background .2s linear;
+        margin: 0;
+    outline: 0;
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 3px;
+        margin-bottom: 15px;
+}
+
+div.loginFooter
+{
+    width: auto;
+    padding: 20px 10px;
+    background-color: #f4f4f4;
+    font-size: 13px;
+    line-height: 13px;
+    color: #8899a6;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+div.homeTop
+{
+	height: 46px;
+    box-shadow: 0 0 3px #aaa;
+    border-bottom: 1px solid #e1e8ed;
+    color: #66757f;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 0 12px;
+}
+
+div.homeNavigation
+{
+	float:left;
+	display: inline-block;
+}
+
+div.homeNavigation li
+{
+	float: left
+}
+
+.pull-right
+{
+	float: right;
+	text-align: left;
+}
+.search
+{
+	width: 139px;
+}
+.search-input input
+{    
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 32px;
+    padding: 5px 27px 6px 12px;
+    font-size: 12px;
+    line-height: 1;
+    color: #292f33;
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    border-radius: 21px;
+    transition: all .2s ease-in-out;
+}
+
+div.leftPanel
+{
+	float: left;
+	vertical-align: left;
+}
+
+div.rightPanel
+{
+	float: right;
+	vertical-align: left;
+}
+div.leftPanel li
+{
+	//margin-right: 12px;
+    overflow: hidden;
+}
+
+div.homeTopContainer
+{
+    max-width: 800px;
+    position: relative;
+    top: 1px;
+}
+
+div.profileDisplay
+{
+    border: 1px solid #e1e8ed;
+    background: #FFF;
+    border-radius: 6px;
+    margin-right: 5px;
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+    height: 200px;
+    position: relative;
+    width: 200px;
+    
+}
+
+div.profileTopHalf
+{
+        color: #0084B4;
+        height: 50%;
+
+}
+
+div.leftProfile
+{
+    width:33%;
+}
+div.rightProfile
+{
+    width:67%;
+}
+
+div.profileDisplayLeft
+{
+    /*border: 1px solid #e1e8ed;*/
+    background: #FFF;
+    border-radius: 6px;
+}
+
+div.profileStats li
+{
+   margin-left: 3px;
+}
+
+.stateLabel
+{
+font-size: 10px;
+    letter-spacing: .02em;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: color .15s
+}
+.statValue
+{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 3px;
+    transition: color .15s ease-in-out;
+    text-align: center;
+}
+
+.profileStats li
+{
+    margin: 2px;
+}
+
+
+.profileStats ul
+{
+    padding: 10px;
+}
+
+.dashboardProfile
+{
+    max-width: 300px;
+    float: right;
+    margin-right: 10px;
+}
+.visuallyhidden {
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px
+}
+
+.text 
+{
+    float: left;
+    margin-left: 3px;
+    margin-top: 12px;
+    padding: 0;
+}
+
+div.tweetIcon li
+{
+    float:right;
+
+}
+
+div.ProfileDetailsLocation
+{
+    color: #8899a6;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 6px;
+}
+
+div.ProfileDetailsLocation:hover
+{
+    color: #0084B4;
+}
+
+div.AdaptiveSearchTitle
+{
+    background-color: #0084B4;  
+        padding: 11px 0;
+        text-align: center;
+}
+
+div.AdaptiveSearchTitle h1
+{
+color: #fff;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin: 0 10%;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.stream-end-inner
+{
+    padding: 15px 50px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+        color: #8899a6      
+}
+
+div.stream-end-inner p
+{
+    margin: 0 0 10px;
+}
+
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; }
+.tabsdemoDynamicHeight md-content md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1; }
+.tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+      background: white; }
+.tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0; }

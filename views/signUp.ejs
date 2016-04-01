@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+   	<link rel='stylesheet' href='/stylesheets/style.css' />
+   	<link rel='stylesheet' href='stylesheets/font.css' />
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+   	<script src="angularjs/signUpAngular.js"></script>
+   	<link rel="stylesheet" type="text/css" href="">
+<title>Twitter Signup</title>
+</head>
+<body ng-app="signUp" ng-controller="signUp" ng-cloak>
+	<div class="topbar">
+		<div class="container" style="color: white;height: 21px;width: 24px;">
+			<span class="Icon Icon--bird Icon--large" style=" margin-top:10px;"></span>
+		</div>
+	</div>
+	<div ng-show="displaySignUpPage">
+		<div class="container">
+			<div class="pageCanvas">
+				<div class="signup-wrapper">
+					<h1>Join Twitter Today</h1>
+					<div class="signUpInput">
+						<div >
+							<input id="full-name" type="text" autocomplete="off" value="" ng-model="firstName" name="user[name]" maxlength="50" aria-required="true" placeholder="Full name" class="">
+						</div>
+						<div>
+							<input id="email" class="email-input" type="text" autocomplete="off" ng-model="email" value="" name="user[email]" aria-required="true" placeholder="Phone or Email">
+						</div>
+						<div>
+							<input id="password" type="password" value="" name="user[user_password]" ng-model="password" aria-required="true" placeholder="Password">
+						</div>
+						<div class="signUpButton">
+							<button type="submit" id="signUp" ng-click="signUp();">Sign up</button>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div ng-show="displayUserNamePage">
+		<div class="container">
+			<div class="pageCanvas">
+				<div class="signup-wrapper">
+					<h1>Choose a username.</h1>
+					<div class="subText">
+						Don’t worry, you can always change it later. 
+					</div>
+
+					<div class="signUpInput">
+						<div >
+							<input class="" id="username" autocomplete="off" ng-model="username" ng-model="username" value="" data-pre-input-value="" name="user[screen_name]" maxlength="15" aria-required="true" placeholder="Username" type="text">
+						</div>
+
+						<div class="signUpButton">
+							<button type="submit" id="signUp" ng-click="submit();">Next</button>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

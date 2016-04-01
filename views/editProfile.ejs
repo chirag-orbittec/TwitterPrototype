@@ -1,0 +1,158 @@
+<html data-scribe-reduced-action-queue="true" lang="en" ng-app="editProfile" >
+<!--<![endif]-->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Welcome</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+   	<link rel='stylesheet' href='stylesheets/style.css' />
+   	<link rel='stylesheet' href='stylesheets/font.css' />
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+   	<script src="angularjs/editProfileAngular.js"></script>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+</head>
+<body ng-controller="editProfile" ng-cloak>
+	<div class="homeTop">
+		<div class="homeTopContainer">
+			<div class="homeNavigation">
+				<div class="container">
+          <div class="homeTopbar">
+            <div class="leftPanel">
+              <ul>
+                <li class="upperTab" style="border-bottom-color: #0084B4;    border-bottom: 5px solid #1b95e0;
+    transition: all .15s ease-in-out; height:42px;">
+    <ul style="padding: 0px;"><li>
+                  <span class="Icon Icon--home Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+                    <span class="text">Home</span>  </li></ul>
+              </li>
+               <li class="upperTab">
+                <ul style="padding: 0px;"><li>
+            <span class="Icon Icon--lightning Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+            <span class="text">Moments</span></li></ul>
+          </li>
+              <li class="upperTab" >
+                <ul style="padding: 0px;"><li>
+                <span class="Icon Icon--notifications Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+                <span class="text">Notifications</span></li></ul>
+
+              
+          </li>
+
+          <li class="upperTab" >
+            <ul style="padding: 0px;"><li>
+                <span class="Icon Icon--dm Icon--large" style="float: left;margin: 11px 0 0 10px;width: 23px;height: 23px"></span></li><li>
+                <span class="text">Messages</span>
+
+              </li></ul>
+          </li>
+
+        </ul>
+      </div>
+      <div class="homeLogo" style="position:absolute;margin-left:70%;">
+      <h1 class="Icon Icon--bird bird-topbar-etched" style="display: inline-block; width: 24px; height: 21px;color: #1da1f2;
+    font-size: 21px;
+    margin-top: 14px;
+    margin-left: -24px;transition: all .25s ease-in-out;">
+      <span class="visuallyhidden">Twitter</span>
+      </h1>
+      </div>
+      <div class="rightPanel">
+        <ul>
+          <li>
+           
+          </li>
+          <li>
+            <a href="/logout">
+             <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 7px;">Log out</button> 
+            </a>
+          </li></ul>
+        </div>
+      </div>
+      <div layout="column" style="margin-top:50px;">
+
+        <h2>
+          <span>Edit Profile</span>
+        </h2>
+       </div>
+
+    
+
+  <md-content layout-padding="">
+
+
+      <div layout-gt-xs="row">
+          <md-input-container class="md-block" flex-gt-xs="">
+            <label>Twitter Handle</label>
+            <input ng-model="twitterHandle" disabled="">
+          </md-input-container>
+      </div>
+    <div layout-gt-xs="row">
+          <md-input-container class="md-block" flex-gt-xs="">
+            <label>First Name</label>
+            <input ng-model="firstName" required>
+          </md-input-container>
+          <md-input-container class="md-block" flex-gt-xs="">
+            <label>Last Name</label>
+            <input ng-model="lastName">
+          </md-input-container>
+      </div>
+	<div layout-gt-xs="row">
+	  
+  	   
+        <md-datepicker ng-model="dateOfBirth" md-placeholder="Enter Date of Birth">
+		</md-datepicker>  
+		
+	</div>
+
+  	<md-input-container class="md-block">
+        <label>Email Address</label>
+        <input required="" type="email" name="clientEmail" ng-model="email" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/">
+
+        <div ng-messages="projectForm.clientEmail.$error" role="alert">
+          <div ng-message-exp="['required', 'pattern']">
+            Your email must look like an e-mail address.
+          </div>
+        </div>
+      </md-input-container>
+
+    <div layout-gt-xs="row">
+	<md-input-container class="md-block" flex-gt-xs="">
+            <label> Location </label>
+            <input ng-model="location">
+          </md-input-container>
+		<md-input-container class="md-block" flex-gt-sm>
+          <label>Phone Number</label>
+          <input name="phone" ng-model="phoneNumber" maxlength="10" md-maxlength="10"/>
+		</md-input-container>
+	    
+  
+</div>
+
+</md-content>
+<div>
+<button type="submit" class="btn btn-primary btn-sm" ng-click="updateData();" style="margin-top: 7px;">Update</button>
+<a href="/homepage"><button type="submit" class="btn btn-primary btn-sm" style="margin-top: 7px;">Cancel</button></a>
+</div>
+
+      </div>
+
+     </div>
+ </div>
+</div>
+</div>
+</body>
+
+</html>
